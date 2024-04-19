@@ -159,7 +159,7 @@ input, select, textarea {
 	}
 	
 	nav a {
-		display: inline-block; /* Displays links in a line */
+		/* display: inline-block; Displays links in a line */
 		color: rgb(48, 48, 48);
 		text-align: center;
 		padding: 24px 24px;
