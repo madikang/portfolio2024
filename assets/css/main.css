@@ -332,11 +332,69 @@ input, select, textarea {
 
 /* Row */
 
+	.test {
+		/* border: 2px solid red; */
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		/* grid-template-rows: repeat(8,1fr); */
+		grid-gap: 1rem;
+	}
+	
+	.grid-system {
+		width: 100%;
+		height: 100%;
+		/* border: 2px solid blue; */
+	}
+
+	.homepage-overlay {
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		/* mix-blend-mode: screen; */
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		font-weight: 500;
+		font-size: 1.5em;
+		color: #fff;
+		border-radius: 0.35em;
+
+	}
+
+	.homepage-overlay:hover {
+		opacity: 1;
+	}
+
+	.image-container{
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 0.35em;
+
+	}
+
+	.image-link-container{
+		height: 100%;
+		width: 100%;
+		border-radius: 0.35em;
+	}
+
+	.image-link-container > .image-container > img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 0.35em;
+	}
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		border: 2px solid red;
 	}
 
 		.row > * {
@@ -2103,6 +2161,7 @@ input, select, textarea {
 		position: relative;
 	}
 
+
 		.image:before {
 			-moz-transition: opacity 0.2s ease-in-out;
 			-webkit-transition: opacity 0.2s ease-in-out;
@@ -2142,7 +2201,7 @@ input, select, textarea {
 				opacity: 1.0;
 			}
 
-			.overlay {
+			/* .overlay {
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -2163,11 +2222,11 @@ input, select, textarea {
 
 			.overlay:hover {
 				opacity: 1;
-			}
+			} */
 
 		.image img {
 			border-radius: 0.35em;
-			display: block;
+			object-fit:fill;
 		}
 
 		.image.left {
@@ -2194,10 +2253,13 @@ input, select, textarea {
 			display: block;
 			margin: 0 0 2em 0;
 			width: 100%;
+			height: 100%;
+			
 		}
 
 			.image.fit img {
 				width: 100%;
+				object-fit: cover;
 			}
 
 		.image.avatar {
