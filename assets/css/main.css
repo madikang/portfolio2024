@@ -389,6 +389,10 @@ input, select, textarea {
 		border-radius: 0.35em;
 	}
 
+	.project-next:hover {
+		color: #d50965;
+	}
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
