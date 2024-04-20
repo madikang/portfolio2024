@@ -41,17 +41,39 @@
             </div>
            </section>
 
-           <section style='margin:2em;display:flex; justify-content: center;align-items:center'>
-                <div style='margin:2em;width: 1280px;display: grid; gap:1rem; grid-template-columns: repeat(12, 1fr);'>
-                    <img src='images/design/pepero/pepero_pattern.jpg' style='width: 100%; height: 100%;grid-column: 1/span 3;'/>
-                    <img src='images/design/pepero/pepero_flat.jpg' style='object-position: cover; width: 100%; height: 100%;grid-column: 4/span 6; grid-row:1/span 1'/>
-                    <img src='images/pfp.jpg' style='object-position: cover; width: 100%; height: 100%;grid-column: 10/span 3;'/>
-                    <img src='images/design/sts/hiring_poster.png' style='width: 100%; height: 100%;grid-column: 1/span 4;'/>
-                    <img src='images/design/sts/stc_flyer.png' style='width: 100%; height: 100%;grid-column: 2/span 3;grid-row: 3/span 2'/>
-                    <img src='images/design/macbeth-mockup.png' style='object-position: cover; width: 100%; height: 100%;grid-column: 9/span 4; grid-row:2/span1'/>
-                    <img src='images/design/sts/contact_social.png' style='object-position: cover; width: 100%; height: 100%;grid-column: 9/span 3;grid-row: 3/span 1'/>
-                    <img src='images/design/pepero/pepero_pattern.jpg' style='object-position: cover; width: 100%; height: 100%;grid-column: 5/span 4;grid-row:2/span 3'/>
+          <!-- for the javascript for the photo gallery, don't remove the #project-gallery id or the .gallery-container class name! & the anchor tags need be around the image!  -->
+           <section id='project-gallery' style='margin:2em;display:flex; justify-content: center;align-items:center;flex-direction: column'>
+                <p style='margin:0;font-size: 1em;text-transform: uppercase'>click to expand</p>
+                <div style='margin:2em;width: 1280px;display: grid; gap:1rem; grid-template-columns: repeat(12, 1fr);' class='gallery-container'>
+                    <a href='images/design/pepero/pepero_pattern.jpg' style='grid-column: 1/span 3;' class='gallery-test'>
+                        <img src='images/design/pepero/pepero_pattern.jpg' style='object-fit: cover;width: 100%; height: 100%;' title="caption-test"/>
+                    </a>
+                    <a href='images/design/pepero/pepero_flat.jpg' style='grid-column: 4/span 6; grid-row:1/span 1' class='gallery-test'>
+                        <img src='images/design/pepero/pepero_flat.jpg' style='object-position: cover; width: 100%; height: 100%;' title="write-caption-here"/>
+                    </a>
+                    <a href='images/pfp.jpg' style='grid-column: 10/span 3;' class='gallery-test'>
+                        <img src='images/pfp.jpg' style='object-position: cover; width: 100%; height: 100%;'  title="write-caption-here"/>
+                    </a>
 
+                    <a href="mages/design/sts/hiring_poster.png" style="grid-column: 1/span 4;" class='gallery-test'>
+                        <img src='images/design/sts/hiring_poster.png' style='object-position: cover; width: 100%; height: 100%'  title="write-caption-here"/>
+                    </a>
+
+                    <a href="images/design/sts/stc_flyer.png" style="grid-column: 2/span 3;grid-row: 3/span 2" class='gallery-test'>
+                        <img src='images/design/sts/stc_flyer.png' style='object-position: cover; width: 100%; height: 100%;'  title="write-caption-here"/>
+                    </a>
+
+                    <a href="images/design/macbeth-mockup.png" style="object-position: cover; grid-column: 9/span 4; grid-row: 2/span 1" class='gallery-test'>
+                        <img src='images/design/macbeth-mockup.png' style='object-position: cover; width: 100%; height: 100%; grid-column: 9/span 4; grid-row: 2/span 1'  title="write-caption-here"/>
+                    </a>
+
+                    <a href="images/design/sts/contact_social.png" style="grid-column: 9/span 3;grid-row: 3/span 1" class='gallery-test'>
+                        <img src='images/design/sts/contact_social.png' style='object-position: cover; width: 100%; height: 100%;' title="write-caption-here"/>
+                    </a>
+
+                    <a href="images/design/pepero/pepero_pattern.jpg" style="grid-column: 5/span 4;grid-row:2/span 2" class='gallery-test'>
+                        <img src='images/design/pepero/pepero_pattern.jpg' style='object-position: cover; width: 100%; height: 100%;' title="write-caption-here"/>
+                    </a>
                 </div>
             </section>
 
